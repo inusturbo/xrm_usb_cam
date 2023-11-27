@@ -49,7 +49,7 @@ from launch_ros.actions import Node  # noqa: E402
 CAMERAS = []
 CAMERAS.append(
     CameraConfig(
-        name='camera1',
+        name='camera0',
         param_path=Path(USB_CAM_DIR, 'config', 'params_1.yaml')
     )
     # Add more Camera's here and they will automatically be launched below
@@ -59,7 +59,7 @@ CAMERAS.append(
 def generate_launch_description():
     ld = LaunchDescription()
 
-    parser = argparse.ArgumentParser(description='usb_cam demo')
+    parser = argparse.ArgumentParser(description='usb_cam')
     parser.add_argument('-n', '--node-name', dest='node_name', type=str,
                         help='name for device', default='usb_cam')
 
