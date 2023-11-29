@@ -37,7 +37,7 @@ USB_CAM_DIR = get_package_share_directory('usb_cam')
 
 
 class CameraConfig(BaseModel):
-    name: str = 'camera1'
+    name: str = 'camera0'
     param_path: Path = Path(USB_CAM_DIR, 'config', 'params_1.yaml')
     remappings: Optional[List]
     namespace: Optional[str]
