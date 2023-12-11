@@ -10,10 +10,10 @@
     image_height: 1080
     camera_name: "camera0"
     camera_info_url: "package://usb_cam/config/camera_info.yaml"
-    brightness: -1
-    contrast: -1
-    saturation: -1
-    sharpness: -1
+    brightness: 50
+    contrast: 50
+    saturation: 50
+    sharpness: 80
     gain: -1
     auto_white_balance: true
     white_balance: 4000
